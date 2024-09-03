@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Notes"
+                android:textAllCaps="true"
+                android:textColor="@color/material_dynamic_primary10"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/image_View"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="210dp"
+                android:gravity="center"
+                tools:srcCompat="@drawable/baseline_cancel_presentation_24" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Title:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_discription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Discription:"
+            android:textSize="20sp"
+            />
+
+        <Button
+
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="?attr/colorSecondary"
+            android:text="save"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+</layout>
